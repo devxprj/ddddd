@@ -20,7 +20,7 @@ export function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/bg.png"
+          src="/images/b.jpg"
           alt="Background"
           fill
           className="object-cover object-center"
@@ -33,10 +33,10 @@ export function Hero() {
       <div className="relative z-10 max-w-2xl mx-auto px-4 text-center">
         {/* Avatar and Logo Container */}
         <div className="mb-8 md:mb-12 flex flex-col items-center gap-4">
-          {/* Avatar with l.png */}
+          {/* Avatar with s.jpg */}
           <div className="w-20 h-20 md:w-24 md:h-24 rounded-full overflow-hidden border-3 border-red-600 shadow-lg shadow-red-600/50">
             <Image
-              src="/images/l.png"
+              src="/images/s.jpg"
               alt="Short Coin Avatar"
               width={96}
               height={96}
@@ -44,13 +44,13 @@ export function Hero() {
             />
           </div>
 
-          {/* ss.png Logo */}
-          <div className="w-40 h-24 md:w-56 md:h-36 relative">
+          {/* s.jpg Logo */}
+          <div className="w-56 h-32 md:w-80 md:h-48 relative">
             <Image
-              src="/images/ss.png"
+              src="/images/s.jpg"
               alt="Short Coin"
               fill
-              className="object-contain drop-shadow-2xl"
+              className="object-cover drop-shadow-2xl rounded-lg"
             />
           </div>
         </div>
