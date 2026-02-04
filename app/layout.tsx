@@ -1,11 +1,12 @@
 import React from "react"
 import type { Metadata } from 'next'
-import { Geist, Geist_Mono } from 'next/font/google'
+import { GeistSans } from 'geist/font/sans'
+import { GeistMono } from 'geist/font/mono'
 
 import './globals.css'
 
-const _geist = Geist({ subsets: ['latin'] })
-const _geistMono = Geist_Mono({ subsets: ['latin'] })
+const _geist = GeistSans
+const _geistMono = GeistMono
 
 export const metadata: Metadata = {
   title: 'Short Coin - The Short of a Lifetime',
@@ -22,7 +23,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${_geist.variable} ${_geistMono.variable}`}>
       <body className="font-sans antialiased">{children}</body>
     </html>
   )
